@@ -79,3 +79,35 @@ Repositorio creado.
 nombre_alumno cambiado directamente en "hola.html".
 
 7. Moverse a la rama principal y crear el fichero adios.html > Sustituye nombre_alumno por tu nombre.
+
+    ```code
+    - git checkout main
+        - salida
+        Cambiado a rama 'main'
+        Tu rama está basada en 'origin/main', pero upstream ha desaparecido.
+        (usa "git branch --unset-upstream" para arreglar)
+        - salida
+    
+    - git branch
+        - salida
+          develop
+        * main
+        - salida
+    
+    - touch adios.html
+    - cat >> adios.html
+    ```html
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+        <html>
+        <head>
+        <title>Adios </title>
+        </head>
+        <body>
+        <h1 align="center" >Adios soy un título </h1>
+        <hr>
+        <p> Adios soy el alumno nombre_alumno </p>
+        </body>
+        </html>
+        ```
+    ```
+
