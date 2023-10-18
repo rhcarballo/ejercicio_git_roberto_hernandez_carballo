@@ -300,3 +300,17 @@ nombre_alumno cambiado directamente en el documento
     ```code 
     - git add .
     - git commit -m "creada rama feature-2 con  Estamos_a_punto_de_terminar.html"
+        - salida
+        [feature-2 d86d743] creada rama feature-2 con  Estamos_a_punto_de_terminar.html
+        2 files changed, 53 insertions(+)
+        create mode 100644 Estamos_a_punto_de_terminar.htmlç
+        - salida
+    ```
+
+19. Muevete a la rama develop, y realiza la mezcla con la rama feature-2.
+
+    ```code
+    - git checkout develop
+    - git branch
+    - git merge failure-2
+    ```
