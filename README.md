@@ -110,4 +110,51 @@ nombre_alumno cambiado directamente en "hola.html".
         </html>
         ```
     ```
+nombre_alumno cambiado directamente en el documento
 
+8. Crea el commit con un mensaje descriptivo.
+
+    ```code
+    - git add .
+    - git commit -m "Creado adios.html en la rama main"
+        - salida
+         [main 353923b] Creado adios.html en la rama main
+        2 files changed, 37 insertions(+), 5 deletions(-)
+        rename hola.html => adios.html (56%)
+        - salida
+    ```
+
+9. Sube los cambios a la rama actual.
+
+    ```code
+    - git add .
+    ```
+10. Lista las ramas actuales.
+
+    ```code
+    - git branch
+        - salida
+          develop
+        * main
+        - salida
+    ```
+
+11. Realizar la mezcla en el repositorio principal.
+
+    ```code
+    - git merge develop
+        - salida
+        Los cambios locales de los siguientes archivos serán sobreescritos por merge:
+        - salida
+    ```
+
+12. Sube los cambios al repositorio a tu cuenta de Github.
+
+    ```code
+    - git add .
+    - git commit -m "Subimos cambios tras la mezcla en el repositorio principal"
+        - salida
+
+        -salida
+        
+    - git push
