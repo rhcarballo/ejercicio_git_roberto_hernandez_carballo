@@ -318,3 +318,35 @@ nombre_alumno cambiado directamente en el documento
     - git merge failure-2
     ```
 >>>>>>> feature-2
+
+
+20. Sube los cambios de la rama develop a Github.
+
+    ```code
+    - git add .
+    - git commit -m "Fusionados develop con feature-2"
+        - salida
+        [develop 0bb89ff] Fusionados develop con feature-2
+        - salida
+    - git push --set-upstream origin develop
+        - salida
+        Enumerando objetos: 21, listo.
+        Contando objetos: 100% (21/21), listo.
+        Compresión delta usando hasta 4 hilos
+        Comprimiendo objetos: 100% (17/17), listo.
+        Escribiendo objetos: 100% (17/17), 4.17 KiB | 4.17 MiB/s, listo.
+        Total 17 (delta 6), reusados 0 (delta 0), pack-reusados 0
+        remote: Resolving deltas: 100% (6/6), completed with 1 local object.
+        remote: 
+        remote: Create a pull request for 'develop' on GitHub by visiting:
+        remote:      https://github.com/rhcarballo/ejercicio_git_roberto_hernandez_carballo/pull/new/develop
+        remote: 
+        To https://github.com/rhcarballo/ejercicio_git_roberto_hernandez_carballo
+        * [new branch]      develop -> develop
+        Rama 'develop' configurada para hacer seguimiento a la rama remota 'develop' de 'origin'.
+        - salida
+    ```
+21. Cambia a la rama principal, realiza la mezcla con la rama develop.
+
+    ```code
+    - git checkout main
