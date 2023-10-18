@@ -154,7 +154,107 @@ nombre_alumno cambiado directamente en el documento
     - git add .
     - git commit -m "Subimos cambios tras la mezcla en el repositorio principal"
         - salida
-
+        [main 3bbbef2] Subimos cambios tras la mezcla en el repositorio principal
+        2 files changed, 48 insertions(+), 1 deletion(-)
         -salida
-        
+
     - git push
+        - salida
+        Enumerando objetos: 15, listo.
+        Contando objetos: 100% (15/15), listo.
+        Compresión delta usando hasta 4 hilos
+        Comprimiendo objetos: 100% (13/13), listo.
+        Escribiendo objetos: 100% (15/15), 2.63 KiB | 2.63 MiB/s, listo.
+        Total 15 (delta 4), reusados 0 (delta 0), pack-reusados 0
+        remote: Resolving deltas: 100% (4/4), done.
+        To https://github.com/rhcarballo/ejercicio_git_roberto_hernandez_carballo
+        * [new branch]      main -> main
+        - salida
+    
+13. Muestra todos los cambios realizados.
+
+    ```code
+   - git status
+        - salida
+        En la rama main
+        Tu rama está actualizada con 'origin/main'.
+
+        Cambios no rastreados para el commit:
+        (usa "git add <archivo>..." para actualizar lo que será confirmado)
+        (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+                modificados:     README.md
+
+        sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+        -salida
+    ```
+
+14. Lista ahora los últimos cambios que se han producido en el repositorio, es decir, los últimos commits que han realizado en el repositorio.
+
+     ```code
+    - git log
+        - salida
+        commit 3bbbef2ad6d4106400aa5eebb964463b838bc4ac (HEAD -> main, origin/main)
+        Author: rhcarballo <robertohernandezcarballo@gmail.com>
+        Date:   Wed Oct 18 15:43:57 2023 +0100
+
+            Subimos cambios tras la mezcla en el repositorio principal
+
+        commit 353923b2233d4dfe08ab9fadd9becb12027e5d48
+        Author: rhcarballo <robertohernandezcarballo@gmail.com>
+        Date:   Wed Oct 18 15:30:55 2023 +0100
+
+            Creado adios.html en la rama main
+
+        commit e97263430edad17266c5c005c5ff15dbe4ce60f0
+        Author: rhcarballo <robertohernandezcarballo@gmail.com>
+        Date:   Wed Oct 18 15:18:31 2023 +0100
+
+            Creado hola.html en rama develop
+
+        commit 226babcf716a5d32bbb388d330fe95eb9f953b27
+        Author: rhcarballo <robertohernandezcarballo@gmail.com>
+        Date:   Wed Oct 18 14:56:26 2023 +0100
+
+            Creado el README.md, primer commit
+        - salida
+    ```
+
+15. Lista todos los tags(etiquetas que existan).
+
+    ```code
+    - git show
+        - salida
+        commit 3bbbef2ad6d4106400aa5eebb964463b838bc4ac (HEAD -> main, origin/main)
+        Author: rhcarballo <robertohernandezcarballo@gmail.com>
+        Date:   Wed Oct 18 15:43:57 2023 +0100
+
+            Subimos cambios tras la mezcla en el repositorio principal
+
+        diff --git a/README.md b/README.md
+        index 1f6db3c..19a6684 100644
+        --- a/README.md
+        +++ b/README.md
+        @@ -110,4 +110,51 @@ nombre_alumno cambiado directamente en "hola.html".
+                </html>
+                ```
+            ```
+        +nombre_alumno cambiado directamente en el documento
+        
+        +8. Crea el commit con un mensaje descriptivo.
+        +
+        +    ```code
+        +    - git add .
+        +    - git commit -m "Creado adios.html en la rama main"
+        +        - salida
+        +         [main 353923b] Creado adios.html en la rama main
+        +        2 files changed, 37 insertions(+), 5 deletions(-)
+            ```
+    ```
+
+16. Crea una nueva etiqueta (tag) de nombre v.1 y sube los cambios.
+
+    ```code
+    - git tag v.1
+    - git add .
+    - git commit -m "Creada etiqueta v.1"
+    
