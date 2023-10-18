@@ -257,4 +257,46 @@ nombre_alumno cambiado directamente en el documento
     - git tag v.1
     - git add .
     - git commit -m "Creada etiqueta v.1"
+        - salida
+        reada etiqueta v.1"
+        [main ccaccac] Creada etiqueta v.1
+        1 file changed, 101 insertions(+), 1 deletion(-)
+        - salida
+    ```
+
+17.     Crea la feature-2 y muevete a esta.
+
+    ```code
+    - git branch feature-2
+    - git checkout feature-2
+    - git branch
+        - salida
+          develop
+        * feature-2
+          main
+        - salida
+    ```
+- Crea el archivo Estamos_a_punto_de_terminar.html, con el siguiente contenido:
+
+    ```code
+    - touch Estamos_a_punto_de_terminar.html
+    - cat >> Estamos_a_punto_de_terminar.html
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+        <html>
+        <head>
+        <title>Terminando </title>
+        </head>
+        <body>
+        <h1 align="center" >Apunto de terminar </h1>
+        <hr>
+        <p> Esto se esta acabando nombre_alumno </p>
+        </body>
+        </html>
+    ```
+
     
+18. Realiza el commit y sube los cambios.
+
+    ```code 
+    - git add .
+    - git commit -m "creada rama feature-2 con  Estamos_a_punto_de_terminar.html"
